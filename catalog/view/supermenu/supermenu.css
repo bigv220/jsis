@@ -1,0 +1,197 @@
+#supermenu {
+	background-image: url('supermenu-bg.png');
+	background-color: #292929;
+	height: 40px;
+	margin-bottom: 15px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	padding: 0px 5px;
+}
+#supermenu-mobile {
+    display: none;
+}
+#supermenu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#supermenu ul li.tlli {
+	position: relative;
+	float: left;
+	z-index: 20;
+	padding: 0px 5px 0px 0px;
+	left:35%;
+}
+#supermenu ul li.tlli:hover {
+	z-index: 100;
+}
+#supermenu ul li a.tll {
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 14px;
+	text-decoration: none;
+	display: block;
+	padding: 13px 10px 13px 10px;
+	z-index: 6;
+	position: relative;
+}
+#supermenu ul li a.opened {
+	font-size: 16px;
+	color: #000;
+	font-weight: bold;
+	line-height: 14px;
+	text-decoration: none;
+	display: block;
+	padding: 13px 10px 13px 10px;
+	z-index: 6;
+	position: relative;
+}
+#supermenu ul li.tlli:hover a.tll {
+	background: #494949;
+}
+#supermenu ul li div.bigdiv {
+	display: none;
+	background: #494949;
+	position: absolute;
+	z-index: 5;
+	padding: 5px;
+	padding-bottom: 15px;
+	padding-right:15px;
+	width: 960px;
+}
+#supermenu ul li.tlli.act div.bigdiv {
+	display: table;
+}
+#supermenu > ul > li > div > ul {
+	display: table-cell;
+}
+#supermenu > ul > li ul + ul {
+	padding-left: 20px;
+}
+#supermenu  ul  li  div  .withchild ul.child-level li a {
+	text-decoration: none;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-bottom: 5px;
+	color: #FFFFFF;
+	display: block;
+	min-width: 120px;
+	background: url('slist.png') left center no-repeat;
+}
+#supermenu  ul  li  div  .withchild ul.child-level li a:hover {
+	text-decoration: underline;
+}
+#supermenu  ul  li  div .supermenu-left {
+	display: inline-block;
+	float: left;
+	vertical-align: top;
+	border-bottom:3px solid #ed227c;
+}
+#supermenu  ul  li  div .menu-add {
+    width: 200px;
+	margin-left: 5px;
+	height: 100%;
+	overflow: hidden;
+	float: right;
+	vertical-align: bottom;
+	display: inline-block;
+}
+#supermenu  ul  li  div .menu-add img {
+    float: right;
+	margin-top: 10px;
+}
+#supermenu  ul  li  div .withoutchild {
+    display: block;
+	margin-top: 5px;
+}
+#supermenu  ul  li  div .withoutchild .withchild {
+    display: inline-block;
+	margin-left: 10px;
+	width: 173px;
+	margin-top: 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+#supermenu  ul  li  div .withoutchild .withchild a {
+	font-size: 13px;
+	color: #fff;
+	text-decoration: none;
+	vertical-align: top;
+} 
+#supermenu  ul  li  div  .withchild {
+    display: inline-block;
+	width: 173px;
+	margin-left: 10px;
+	margin-top: 10px;
+	vertical-align: top;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	border-radius: 2px;
+}
+#supermenu  ul  li  div  .withchild a.theparent {
+    color: #bbb;
+	background: #555;
+	border-bottom: 1px solid #444;
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+	font-weight: bold;
+}
+#supermenu  ul  li  div .withoutchild .withchild a:hover, #supermenu  ul  li  div  .withchild a.theparent:hover {
+    background: #444;
+}
+#supermenu  ul  li  div .withimage {
+    display: inline-block;
+	vertical-align: top;
+	width: 173px;
+	margin:15px 20px 15px 42px;
+	position:relative;
+}
+#supermenu  ul  li  div .withimage .image {
+	border-right:1px solid lightgray;
+}
+#supermenu  ul  li  div .withimage .image img {
+	background: #fff;
+	width:190;
+}
+
+#supermenu  ul  li  div .withimage span.menu-hover {
+    background: url("menu-hover.png") no-repeat scroll 18% 30% transparent;
+    height: 121px;
+    left: 10px;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+#supermenu  ul  li  div .withimage .name{
+	padding-right:35px;
+	text-align: center;
+}
+
+#supermenu  ul  li  div .withimage .name a {
+    color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+}
+#supermenu  ul  li  div .withimage .child-level a {
+    text-decoration: none;
+	color: #fff;
+	font-weight: normal;
+	font-size: 12px;
+}
+#supermenu  ul  li  div .withimage .child-level {
+    margin-left: 5px;
+}
+#supermenu  ul  li  div .withimage .name a:hover {
+    text-decoration: none;
+}
+#supermenu .mainexpand {
+    display: none;
+}

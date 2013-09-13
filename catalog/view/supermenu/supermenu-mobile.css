@@ -1,0 +1,217 @@
+@media screen and (max-width: 960px) {
+#supermenu {
+  height: auto;
+	background-image: url('supermenu-bg2.png');
+  display: inline-block;
+  width: 100%;
+  padding: 0px;
+}
+#supermenu > ul {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#supermenu ul li.tlli.mkids {
+  background: url('mkid2.png') right center no-repeat;
+  padding-right: 20px;
+}
+#supermenu ul li.tlli + li.tlli {
+  margin-left: 6px;
+}
+#supermenu ul li.tlli  a.tll{
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#supermenu ul li.tlli .bigdiv {
+  width: 300px !important;
+}
+#supermenu ul li.tlli .bigdiv .supermenu-left {
+  width: 290px !important;
+}
+#supermenu ul li div .menu-add {
+  display: none;
+} 
+#supermenu ul li div .withimage .image img {
+  width: 35px;
+  height: 35px;
+}
+#supermenu ul li div .withimage .image { 
+  float: left;
+  margin-right: 10px;
+}
+#supermenu ul li div .withimage .name {
+  position: relative;
+}
+#supermenu ul li div .withimage {
+ min-height: 45px;
+ width: 265px;
+}
+.child-level {
+  display: none;
+}
+#supermenu ul li div .withchild {
+  position: relative;
+  width: 265px !important;
+}
+
+#supermenu ul li div .withchild .mainexpand, #supermenu ul li div .withimage .mainexpand {
+    display: block;
+    width: 50px;
+	height: 24px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+    background: #444 url('mkid2.png') center center no-repeat;
+	cursor: pointer;
+}
+#supermenu ul li div .withimage .mainexpand {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+#supermenu ul li div .withchild.exped .mainexpand, #supermenu ul li div .withimage .name.exped .mainexpand { 
+    background-image: url('mkid3.png');
+}
+#supermenu ul li div .withchild.exped ul.child-level {
+    display: block;
+}
+#supermenu ul li div .withimage .name.exped ul.child-level {
+    display: block;
+}
+}
+@media screen and (max-width: 500px) {
+#supermenu {
+  display: none;
+}
+#supermenu-mobile {
+	background-image: url('supermenu-bg2.png');
+	background-color: #292929;
+	display: block;
+	margin-bottom: 15px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	padding: 5px;
+	margin-top:-60px;
+}
+#supermenu-mobile ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#supermenu-mobile ul li.tlli {
+	position: relative;
+	width: 100%;
+	text-align: left;
+	z-index: 20;
+}
+#supermenu-mobile ul li.tlli:hover {
+	z-index: 100;
+}
+#supermenu-mobile ul li a.tll {
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 14px;
+	text-decoration: none;
+	display: block;
+	padding: 10px 10px 10px 10px;
+	z-index: 6;
+	position: relative;
+	text-shadow: 0 0 1px #111;
+    background: url('mkid2.png') 95% center no-repeat;
+}
+#supermenu-mobile ul li div.bigdiv {
+	display: none;
+	background: #494949;
+	z-index: 5;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	width: 100%;
+}
+#supermenu-mobile  ul  li  div .withoutchild .withchild a {
+	font-size: 13px;
+	color: #fff;
+	text-decoration: none;
+	vertical-align: top;
+} 
+#supermenu-mobile  ul  li  div  .withchild {
+    display: block;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 1px solid #555;
+	margin-top: 10px;
+	vertical-align: top;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	border-radius: 2px;
+	position: relative;
+}
+#supermenu-mobile  ul  li  div  .withchild .toexpand {
+    width: 50px;
+	height: 26px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+    background: #555 url('mkid2.png') center center no-repeat;
+	cursor: pointer;
+}
+#supermenu-mobile  ul  li  div  .withchild .toexpandkids {
+    width: 50px;
+	height: 26px;
+	position: absolute;
+	top: 0px;
+	right: 10px;
+    background: #555 url('mkid2.png') center center no-repeat;
+	cursor: pointer;
+	-webkit-border-radius: 3px 3px 0px 0px;
+	-moz-border-radius: 3px 3px 0px 0px;
+	-khtml-border-radius: 3px 3px 0px 0px;
+	border-radius: 3px 3px 0px 0px;
+}
+#supermenu-mobile  ul  li  div  .withchild.exped .toexpand { 
+    background-image: url('mkid3.png');
+}
+#supermenu-mobile  ul  li  div  .withchild > ul li.exped .toexpandkids { 
+    background-image: url('mkid3.png');
+}
+#supermenu-mobile  ul  li  div  .withchild > ul {
+    display: none;
+}
+#supermenu-mobile  ul  li  div  .withchild.exped > ul {
+    display: block;
+}
+#supermenu-mobile  ul  li  div  .withchild > ul  li {
+    padding: 10px;
+	padding-top: 6px;
+	position: relative;
+}
+#supermenu-mobile  ul  li  div  .withchild > ul li.exped ul.child-level{
+    display: block;
+}
+#supermenu-mobile  ul  li  div  .withchild > ul  li a{
+    text-decoration: none;
+	color: black;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #555;
+	display: block;
+}
+#supermenu-mobile  ul  li  div  .withchild > ul  li ul li a{
+   padding-left: 15px;
+}
+#supermenu-mobile  ul  li  div  .withchild a.theparent {
+    color: #000;
+	background: #444;
+	border-bottom: 1px solid #333;
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: left;
+}
+#supermenu-mobile  ul  li  div .withoutchild .withchild a:hover {
+    background: #333;
+}
+}
