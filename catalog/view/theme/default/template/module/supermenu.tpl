@@ -88,7 +88,7 @@ $("#supermenu ul li.tlli").hover(function() {
 <div id="supermenu">
   <ul>
     <?php foreach ($mitems as $mitem) { ?>
-	<li class="tlli<?php if ($mitem['children']) { ?> mkids <?php } ?>" <?php if ($mitem['tlstyle']) { ?>style="<?php echo $mitem['tlstyle']; ?>" <?php } ?>><a class="tll" <?php if ($mitem['tlcolor']) { ?>style="color: <?php echo $mitem['tlcolor']; ?>;" <?php } ?><?php if ($mitem['href']) { ?>href="<?php echo $mitem['href']; ?>"<?php } ?>><?php echo $mitem['name']; ?></a>
+	<li class="tlli<?php if ($mitem['children']) { ?> mkids <?php } ?>" <?php if ($mitem['tlstyle']) { ?>style="<?php echo $mitem['tlstyle']; ?>" <?php } ?>><a class="tll" <?php if ($mitem['tlcolor']) { ?>style="color: <?php echo $mitem['tlcolor']; ?>;" <?php } ?><?php if ($mitem['href']) { ?>href="<?php echo $mitem['href']; ?>"<?php } ?>><?php echo strtoupper($mitem['name']); ?></a>
 	<?php if ($mitem['children'] || ($mitem['chtml'] && $mitem['chtml'] == 1)) { ?>
      <div class="bigdiv"<?php if ($mitem['dwidth']) { ?> style="width: <?php echo $mitem['dwidth']; ?>px;"<?php } ?>>
 	 

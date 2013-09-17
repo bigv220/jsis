@@ -21,14 +21,16 @@
 	position: relative;
 	float: left;
 	z-index: 20;
-	padding: 0px 5px 0px 0px;
-	left:35%;
+	padding: 0 18px 0 10px;
+	left:29%;
 }
 #supermenu ul li.tlli:hover {
 	z-index: 100;
+	padding: 0 18px 0 10px;
 }
 #supermenu ul li a.tll {
-	font-size: 16px;
+	font-size: 18px;
+	font-family: 'Open Sans',arial,sans-serif;
 	color: #fff;
 	font-weight: bold;
 	line-height: 14px;
@@ -57,9 +59,7 @@
 	background: #494949;
 	position: absolute;
 	z-index: 5;
-	padding: 5px;
-	padding-bottom: 15px;
-	padding-right:15px;
+	padding:5px 15px 0 5px;
 	width: 960px;
 }
 #supermenu ul li.tlli.act div.bigdiv {
@@ -89,6 +89,7 @@
 	float: left;
 	vertical-align: top;
 	border-bottom:3px solid #ed227c;
+	text-align: center;
 }
 #supermenu  ul  li  div .menu-add {
     width: 200px;
