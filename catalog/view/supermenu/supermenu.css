@@ -149,13 +149,18 @@
 }
 #supermenu  ul  li  div .withimage {
     display: inline-block;
-	vertical-align: top;
-	width: 173px;
-	margin:15px 20px 15px 42px;
-	position:relative;
+    margin: 15px 20px 15px 12px;
+    position: relative;
+    vertical-align: top;
+    width: 203px;
 }
 #supermenu  ul  li  div .withimage .image {
 	border-right:1px solid lightgray;
+	padding-right:40px;
+}
+#supermenu  ul  li  div .noborder .image {
+	border-right:0px solid lightgray;
+	padding-right:40px;
 }
 #supermenu  ul  li  div .withimage .image img {
 	background: #fff;

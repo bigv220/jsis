@@ -127,8 +127,8 @@ $("#supermenu ul li.tlli").hover(function() {
            <?php } ?>
 		  </div>
 	  <?php } else { ?>
-		  <?php foreach ($mitem['children'] as $mildren) { ?>
-		   <div class="withimage"<?php if ($mitem['iwidth']) { ?> style="width: <?php echo $mitem['iwidth']; ?>px;"<?php } ?>>
+		  <?php $total = count($mitem['children']); if ($total > 4) $total = 4;$n = 1; foreach ($mitem['children'] as $mildren) { ?>
+		   <div class="withimage <?php if ($n++ % $total == 0) echo "noborder";?>"<?php if ($mitem['iwidth']) { ?> style="width: <?php echo $mitem['iwidth']; ?>px;"<?php } ?>>
 		    <div class="image">
 		     <a href="<?php echo $mildren['href']; ?>"><img src="<?php echo $mildren['thumb']; ?>" alt="<?php echo $mildren['name']; ?>" title="<?php echo $mildren['name']; ?>" /></a>
 
