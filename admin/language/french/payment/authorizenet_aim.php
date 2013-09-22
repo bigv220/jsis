@@ -8,16 +8,16 @@ $_['text_success']       = 'Succès: Vous avez modifié les détails de paiement
 $_['text_test']          = 'Test';
 $_['text_live']          = 'Réel';
 $_['text_authorization'] = 'Autorisation';
-$_['text_capture']       = 'Capture';
+$_['text_capture']       = 'Collecter';
 
 // Entry
 $_['entry_login']        = 'ID de connexion:';
 $_['entry_key']          = 'Clé de transaction:';
-$_['entry_hash']         = 'Hash MD5:';
+$_['entry_hash']         = 'Hachage MD5:';
 $_['entry_server']       = 'Seveur de transaction:';
 $_['entry_mode']         = 'Mode de transaction:';
 $_['entry_method']       = 'Méthode de transaction:';
-$_['entry_total']        = 'Total:<br /><span class="help">Le total à l\'encaissement que la commande doit atteindre avant que cette méthode de paiement devienne active.</span>';
+$_['entry_total']        = 'Total:<br /><span class="help">Le total à l\'encaissement que la commande doit atteindre avant que ce mode de paiement devienne actif.</span>';
 $_['entry_order_status'] = 'État de commande:';
 $_['entry_geo_zone']     = 'Zone géographique:';
 $_['entry_status']       = 'Statut:';

@@ -15,7 +15,7 @@ $_['text_affiliate']               = 'Affiliés';
 $_['text_return']                  = 'Retours';
 $_['text_image_manager']           = 'Gestionnaire d&#39;Images'; // Code Javascript
 $_['text_browse']                  = 'Parcourir les fichiers';
-$_['text_clear']                   = 'Supprimer l\'image';
+$_['text_clear']                   = 'Effacer l\'image';
 $_['text_shipping']                = 'Adresse de livraison';
 $_['text_payment']                 = 'Adresse de paiement';
 $_['text_mail']                    = 'Mail';
@@ -112,7 +112,7 @@ $_['entry_maintenance']            = 'Mode maintenance:<br /><span class="help">
 $_['entry_password']               = 'Autoriser l\'oubli du mot de passe:<br /><span class="help">Autorise l\'utilisation des mots de passe oubliés pour l\'administration. Désactivé automatiquement si le système détecte une tentative de hacking.</span>';
 $_['entry_encryption']             = 'Clé de cryptage:<br /><span class="help">Veuillez fournir une clé secrète qui sera utilisée pour crypter les informations privées lors du traitement des commandes.</span>';
 $_['entry_compression']            = 'Niveau de compression en sortie:<br /><span class="help">GZIP pour un transfert plus efficace à vos clients. Le niveau de compression doit être compris entre 0 et 9.</span>';
-$_['entry_error_display']          = 'Afficher les erreurs :';
+$_['entry_error_display']          = 'Afficher les erreurs:';
 $_['entry_error_log']              = 'Écrire les erreurs dans un journal:';
 $_['entry_error_filename']         = 'Nom du fichier pour le journal des erreurs:';
 $_['entry_google_analytics']       = 'Code de Google Analytics:<br /><span class="help">Connectez-vous à votre compte <a href="http://www.google.com/analytics/" target="_blank"><u>Google Analytics</u></a>, et après avoir créé le profil de votre site web, copiez-collez le code Google Analytics dans cette zone de texte.</span>';
@@ -121,7 +121,7 @@ $_['entry_google_analytics']       = 'Code de Google Analytics:<br /><span class
 $_['error_warning']                = 'Attention: Veuillez vérifier soigneusement qu\'il n\'y ait pas d\'erreurs dans le formulaire !';
 $_['error_permission']             = 'Attention: Vous n\'avez pas les droits nécessaires pour modifier les paramètres !';
 $_['error_name']                   = 'Le nom de la boutique doit être composé de 3 à 32 caractères !';
-$_['error_owner']                  = 'Le propiétaire de la boutique doit être composé de 3 à 64 caractères !';
+$_['error_owner']                  = 'Le propriétaire de la boutique doit être composé de 3 à 64 caractères !';
 $_['error_address']                = 'L\'adresse de la boutique doit être composée de 10 à 128 caractères !';
 $_['error_email']                  = 'L\'adresse e-mail ne semble pas valide !';
 $_['error_telephone']              = 'Le téléphone doit être composé de 3 à 32 caractères !';

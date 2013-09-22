@@ -6,7 +6,7 @@ $_['heading_title']          = 'Produits';
 $_['text_success']           = 'Succès: Vous avez modifié les produits !';
 $_['text_plus']              = '+';
 $_['text_minus']             = '-';
-$_['text_default']           = 'Défaut';
+$_['text_default']           = 'Par défaut';
 $_['text_image_manager']     = 'Gestionnaire d&#39;Images';  // Code Javascript
 $_['text_browse']            = 'Parcourir les fichiers';
 $_['text_clear']             = 'Effacer l\'image';
@@ -38,7 +38,7 @@ $_['entry_ean']              = 'EAN:<br/><span class="help">European Article Num
 $_['entry_jan']              = 'JAN:<br/><span class="help">Japanese Article Number</span>';
 $_['entry_isbn']             = 'ISBN:<br/><span class="help">International Standard Book Number</span>';
 $_['entry_mpn']              = 'MPN:<br/><span class="help">Manufacturer Part Number</span>';
-$_['entry_location']         = 'Emplacement:';
+$_['entry_location']         = 'Situation:';
 $_['entry_shipping']         = 'Livraison requise:'; 
 $_['entry_manufacturer']     = 'Fabricant:<br /><span class="help">(Complétion automatique)</span>';
 $_['entry_date_available']   = 'Date de disponibilité:';
@@ -74,6 +74,27 @@ $_['entry_related']          = 'Produits apparentés:<br /><span class="help">(C
 $_['entry_tag']              = 'Balises produit:<br /><span class="help">séparées par une virgule</span>';
 $_['entry_reward']           = 'Points de fidélité:';
 $_['entry_layout']           = 'Outrepasser la disposition:';
+$_['entry_profile']          = 'Profil:';
+
+$_['text_recurring_help']    = 'Les versements récurrents sont calculés selon la fréquence et les cycles de facturation.<br />Par exemple, si vous utilisez une fréquence par "semaine" et un cycle de "2", alors l\'utilisateur sera facturé toutes les 2 semaines.<br />La durée est le nombre de fois que l\'utilisateur effectuera un versement, positionnez-la à 0 si vous voulez des versements qui se poursuivent jusqu\'à annulation.';
+$_['text_recurring_title']   = 'Paiements récurrents';
+$_['text_recurring_trial']   = 'Période d\'essai';
+$_['entry_recurring']        = 'Facturation récurrente:';
+$_['entry_recurring_price']  = 'Tarif récurrent:';
+$_['entry_recurring_freq']   = 'Fréquence récurrente:';
+$_['entry_recurring_cycle']  = 'Cycles récurrents:<span class="help">Nombre de fois facturé, doit être supérieur ou égal à 1</span>';
+$_['entry_recurring_length'] = 'Durée récurrente:<span class="help">0 = jusqu\'à annulation</span>';
+$_['entry_trial']            = 'Période d\'essai:';
+$_['entry_trial_price']      = 'Tarif récurrent d\'essai:';
+$_['entry_trial_freq']       = 'Fréquence récurrente d\'essai:';
+$_['entry_trial_cycle']      = 'Cycles récurrents d\'essai:<span class="help">Nombre de fois facturé, doit être supérieur ou égal à 1</span>';
+$_['entry_trial_length']     = 'Durée récurrente d\'essai:';
+
+$_['text_length_day']        = 'Jour';
+$_['text_length_week']       = 'Semaine';
+$_['text_length_month']      = 'Mois';
+$_['text_length_month_semi'] = 'Quinzaine';
+$_['text_length_year']       = 'Année';
 
 // Error
 $_['error_warning']          = 'Attention: Veuillez vérifier soigneusement qu\'il n\'y ait pas d\'erreurs dans le formulaire !';

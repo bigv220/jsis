@@ -19,7 +19,7 @@ $_['text_netherlands']      = 'Pays-Bas';
 $_['entry_merchant']        = 'ID Marchand Klarna:<br /><span class="help">(estore id) à utiliser pour le service Klarna (fourni par Klarna).</span>';
 $_['entry_secret']          = 'Secret Klarna:<br /><span class="help">Secret partagé à utiliser avec le service Klarna (fourni par Klarna).</span>';
 $_['entry_server']          = 'Serveur:';
-$_['entry_total']           = 'Total:<br /><span class="help">Le total à l\'encaissement que la commande doit atteindre avant que cette méthode de paiement devienne active.</span>';
+$_['entry_total']           = 'Total:<br /><span class="help">Le total à l\'encaissement que la commande doit atteindre avant que ce mode de paiement devienne actif.</span>';
 $_['entry_pending_status']  = 'État en attente:';
 $_['entry_accepted_status'] = 'État accepté:';
 $_['entry_geo_zone']        = 'Zone géographique:';

@@ -13,7 +13,7 @@ $_['text_login']             = 'Attention: Vous devez <a href="%s">vous connecte
 $_['text_points']            = 'Points de fidélité: %s';
 $_['text_items']             = '%s article(s) - %s';
 $_['text_next']              = 'Que voulez-vous faire ensuite ?';
-$_['text_next_choice']       = 'Choisissez si vous voulez utiliser un code de réduction ou des points de fidélité, ou estimer vos frais de livraison.';
+$_['text_next_choice']       = 'Choisissez si vous voulez utiliser un code de réduction ou des points de fidélité, ou bien estimer vos frais de livraison.';
 $_['text_use_coupon']        = 'Utiliser un code de bon de réduction';
 $_['text_use_voucher']       = 'Utiliser un chèque-cadeaur';
 $_['text_use_reward']        = 'Utiliser les points de fidélité (%s disponible)';
@@ -21,6 +21,17 @@ $_['text_shipping_estimate'] = 'Estimation des frais de livraison &amp; taxes';
 $_['text_shipping_detail']   = 'Entrez votre destination pour obternir une estimation des frais de livraison.';
 $_['text_shipping_method']   = 'Veuillez choisir la méthode de livraison préférée à utiliser pour cette commande.';
 $_['text_empty']             = 'Votre panier est vide !';
+$_['text_until_cancelled']   = 'jusqu\'à annulation';
+$_['text_recurring_item']    = 'Article récurrent';
+$_['text_payment_profile']   = 'Profil de paiement';
+$_['text_trial_description'] = '%4$d paiement(s) de %1$s tou(te)s les %2$d %3$s(s) puis';
+$_['text_payment_description'] = '%4$d paiement(s) de %1$s tou(te)s les %2$d %3$s(s)';
+$_['text_payment_until_canceled_description'] = '%s tou(te)s les %d %s(s) jusqu\'à annulation';
+$_['text_day']               = 'jour';
+$_['text_week']              = 'semaine';
+$_['text_semi_month']        = 'quinzaine';
+$_['text_month']             = 'mois';
+$_['text_year']              = 'année';
 
 // Column
 $_['column_image']           = 'Image';
@@ -53,4 +64,9 @@ $_['error_country']          = 'Veuillez choisir un pays !';
 $_['error_zone']             = 'Veuillez choisir une région / un département !';
 $_['error_shipping']         = 'Attention: Méthode de livraison requise !';
 $_['error_no_shipping']      = 'Attention: Aucune option de livraison n\'est disponible. Veuillez <a href="%s">nous contacter</a> pour assistance !';
+$_['error_profile_required'] = 'Veuillez choisir un profil de paiement !';
+
+$_['text_trial']             = '%4$s paiement(s) de %1$s tou(te)s les %2$d %3$s(s) ';
+$_['text_recurring']         = '%s tou(te)s les %s %s';
+$_['text_length']            = ' pour %s paiements';
 ?>

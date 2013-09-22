@@ -10,7 +10,7 @@ $_['text_success']       = 'Succès: Vous avez modifié les détails de paiement
 $_['entry_username']     = 'Nom d\'utilisateur PayMate:';
 $_['entry_password']     = 'Mot de passe:<br /><span class="help">Utilisez juste un mot de passe au hasard. Il sera utilisé pour s\'assurer que l\'information de paiement ne soit pas brouillée après l\'envoi au portail de paiement.</span>';
 $_['entry_test']         = 'Test Mode:';
-$_['entry_total']        = 'Total:<br /><span class="help">Le total à l\'encaissement que la commande doit atteindre avant que cette méthode de paiement devienne active.</span>';
+$_['entry_total']        = 'Total:<br /><span class="help">Le total à l\'encaissement que la commande doit atteindre avant que ce mode de paiement devienne actif.</span>';
 $_['entry_order_status'] = 'État de commande:';
 $_['entry_geo_zone']     = 'Zone géographique:';
 $_['entry_status']       = 'Statut:';

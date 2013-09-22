@@ -42,7 +42,7 @@ $_['entry_zone']                = 'Région / Département:';
 $_['entry_code']                = 'Code de suivi :<span class="help">Le code de suivi qui sera utilisé pour le suivi des parrainages.</span>';
 $_['entry_commission']          = 'Commission (%):<span class="help">Pourcentage que l\'affilié reçoit sur chaque commande.</span>';
 $_['entry_tax']                 = 'Numéro d\'identification fiscale:';
-$_['entry_payment']             = 'Méthode de paiement:';
+$_['entry_payment']             = 'Mode de paiement:';
 $_['entry_cheque']              = 'Nom du bénéficiaire des chèques:';
 $_['entry_paypal']              = 'Compte e-mail PayPal:';
 $_['entry_bank_name']           = 'Nom de la banque:';

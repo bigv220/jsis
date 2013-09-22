@@ -7,7 +7,7 @@ $_['text_success']       = 'Succès: Vous avez modifié les bannières !';
 $_['text_default']       = 'Par défaut';
 $_['text_image_manager'] = 'Gestionnaire d&#39;Images';  // Code Javascript
 $_['text_browse']        = 'Parcourir les fichiers';
-$_['text_clear']         = 'Supprimer l\'image';
+$_['text_clear']         = 'Effacer l\'image';
 
 // Column
 $_['column_name']        = 'Nom de la bannière';

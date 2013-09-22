@@ -25,7 +25,7 @@
    }
 <?php } ?>
 <?php if ($supermenu_settings['dbg']) { ?>
-   #supermenu ul li.tlli:hover a.tll, #supermenu-mobile ul li.tlli:hover a.tll {
+   #supermenu ul li.tlli:hover a.tll {
    background: <?php echo $supermenu_settings['dbg']; ?>;
    color:#000;
    }
@@ -247,10 +247,8 @@ $('#supermenu-mobile ul li.tlli a').bind('click', function() {
     if (!superparent) {
 	$(this).parent().find('.bigdiv').slideDown('fast');
 	superparent = true;
-	$(this).css('color','#000');
 	} else {
 	$(this).parent().find('.bigdiv').slideUp('fast');
-	$(this).css('color','#000');
 	superparent = false;
 	}
 });

@@ -29,10 +29,10 @@ $_['text_domestic_27']      = 'Express Mail Flat-Rate Envelope Hold For Pickup';
 $_['text_domestic_28']      = 'Priority Mail Small Flat-Rate Box';
 $_['text_international_1']  = 'Express Mail International';
 $_['text_international_2']  = 'Priority Mail International';
-$_['text_international_4']  = 'Global Express Guaranteed (Document and Non-document)';
+$_['text_international_4']  = 'Global Express Guaranteed (Document and No-document)';
 $_['text_international_5']  = 'Global Express Guaranteed Document used';
-$_['text_international_6']  = 'Global Express Guaranteed Non-Document Rectangular shape';
-$_['text_international_7']  = 'Global Express Guaranteed Non-Document Non-Rectangular';
+$_['text_international_6']  = 'Global Express Guaranteed No-Document Rectangular shape';
+$_['text_international_7']  = 'Global Express Guaranteed No-Document No-Rectangular';
 $_['text_international_8']  = 'Priority Mail Flat Rate Envelope';
 $_['text_international_9']  = 'Priority Mail Flat Rate Box';
 $_['text_international_10'] = 'Express Mail International Flat Rate Envelope';
@@ -46,7 +46,7 @@ $_['text_international_21'] = 'Postcards';
 $_['text_regular']          = 'Regular';
 $_['text_large']            = 'Large';
 $_['text_rectangular']      = 'Rectangular';
-$_['text_non_rectangular']  = 'Non Rectangular';
+$_['text_non_rectangular']  = 'No Rectangular';
 $_['text_variable']         = 'Variable';
 
 // Entry

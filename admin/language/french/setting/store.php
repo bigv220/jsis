@@ -11,7 +11,7 @@ $_['text_checkout']                = 'Encaissement';
 $_['text_stock']                   = 'Stock';
 $_['text_image_manager']           = 'Gestionnaire d&#39;Images';  // Code Javascript
 $_['text_browse']                  = 'Parcourir les fichiers';
-$_['text_clear']                   = 'Supprimer l\'image';
+$_['text_clear']                   = 'Effacer l\'image';
 $_['text_shipping']                = 'Adresse de livraison';
 $_['text_payment']                 = 'Adresse de paiement';
 

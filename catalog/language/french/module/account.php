@@ -17,4 +17,5 @@ $_['text_download']    = 'Téléchargements';
 $_['text_return']      = 'Retours';
 $_['text_transaction'] = 'Transactions';
 $_['text_newsletter']  = 'Lettre d\'informations';
+$_['text_recurring']   = 'Paiements récurrents';
 ?>

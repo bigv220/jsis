@@ -22,7 +22,7 @@ $_['text_order']                    = 'Nombre total de commandes';
 $_['text_customer']                 = 'Nombre total de clients';
 
 // Column
-$_['column_order']                  = 'ID Commande';
+$_['column_order']                  = 'N° Commande';
 $_['column_customer']               = 'Client';
 $_['column_status']                 = 'État';
 $_['column_date_added']             = 'Date Création';

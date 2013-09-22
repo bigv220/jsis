@@ -8,7 +8,9 @@ $(document).ready(function() {
 		i = (ddown.left + $(this).outerWidth()) - (supermenu.left + $('#supermenu').outerWidth());
 		
 		if (i > 0) {
-			$(this).css('margin-left', '-' + (i -10) + 'px');
+			//$(this).css('margin-left', '-' + (i -10) + 'px');
+			$(this).css('text-align', 'center');
+			$(this).css('margin-left', '-10px');
 		}
 	});
 	$('#supermenu  ul  li  div .withimage .image').mouseover(

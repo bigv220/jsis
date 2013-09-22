@@ -26,6 +26,16 @@ $_['text_upload']       = 'Votre fichier a été uploadé avec succès !';
 $_['text_wait']         = 'Veuillez patienter !';
 $_['text_tags']         = 'Tags:';
 $_['text_error']        = 'Produit non trouvé !';
+$_['text_payment_profile'] = 'Profils de paiement';
+
+$_['text_trial_description'] = '%4$d paiment(s) de %1$s tou(te)s les %2$d %3$s(s) puis';
+$_['text_payment_description'] = '%4$d paiement(s) de %1$s tou(te)s les %2$d %3$s(s)';
+$_['text_payment_until_canceled_description'] = '%s tou(te)s les %d %s(s) jusqu\'à annulation';
+$_['text_day']          = 'jour';
+$_['text_week']         = 'semaine';
+$_['text_semi_month']   = 'quinzaine';
+$_['text_month']        = 'mois';
+$_['text_year']         = 'année';
 
 // Entry
 $_['entry_name']        = 'Intitulé de votre avis:';

@@ -6,7 +6,7 @@ $_['heading_title']      = 'Thèmes des chèques-cadeaux';
 $_['text_success']       = 'Succès: Vous avez modifié les thèmes des chèques-cadeaux !';
 $_['text_image_manager'] = 'Gestionnaire d&#39;Images';  // Code Javascript
 $_['text_browse']        = 'Parcourir les fichiers';
-$_['text_clear']         = 'Supprimer l\'image';
+$_['text_clear']         = 'Effacer l\'image';
 
 // Column
 $_['column_name']        = 'Nom du thème';

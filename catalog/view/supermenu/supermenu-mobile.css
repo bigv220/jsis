@@ -92,7 +92,6 @@
 	-moz-border-radius: 3px;
 	-khtml-border-radius: 3px;
 	border-radius: 3px;
-	padding: 5px;
 	margin-top:-60px;
 }
 #supermenu-mobile ul {
@@ -126,7 +125,7 @@
 	display: none;
 	background: #494949;
 	z-index: 5;
-	padding-top: 5px;
+	padding-top: 1px;
 	padding-bottom: 15px;
 	width: 100%;
 }
@@ -138,15 +137,8 @@
 } 
 #supermenu-mobile  ul  li  div  .withchild {
     display: block;
-	margin-left: 5px;
-	margin-right: 5px;
-	border: 1px solid #555;
-	margin-top: 10px;
+	margin-top: 1px;
 	vertical-align: top;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	-khtml-border-radius: 2px;
-	border-radius: 2px;
 	position: relative;
 }
 #supermenu-mobile  ul  li  div  .withchild .toexpand {
@@ -155,7 +147,7 @@
 	position: absolute;
 	top: 0px;
 	right: 0px;
-    background: #555 url('mkid2.png') center center no-repeat;
+    background: #F71277 url('mkid2.png') center center no-repeat;
 	cursor: pointer;
 }
 #supermenu-mobile  ul  li  div  .withchild .toexpandkids {
@@ -184,8 +176,8 @@
     display: block;
 }
 #supermenu-mobile  ul  li  div  .withchild > ul  li {
-    padding: 10px;
-	padding-top: 6px;
+    padding: 0;
+	padding-top: 1px;
 	position: relative;
 }
 #supermenu-mobile  ul  li  div  .withchild > ul li.exped ul.child-level{
@@ -195,21 +187,30 @@
     text-decoration: none;
 	color: black;
 	padding-bottom: 6px;
-	border-bottom: 1px solid #555;
+	border: 1px solid #F71277;
 	display: block;
+	padding: 7px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	border-radius: 2px;
 }
 #supermenu-mobile  ul  li  div  .withchild > ul  li ul li a{
    padding-left: 15px;
 }
 #supermenu-mobile  ul  li  div  .withchild a.theparent {
-    color: #000;
-	background: #444;
-	border-bottom: 1px solid #333;
+    color: #F71277;
+	background: #F71277;
+	border-bottom: 1px solid #F71277;
 	display: block;
-	padding: 5px;
+	padding: 7px;
 	text-decoration: none;
 	font-weight: bold;
 	text-align: left;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	border-radius: 2px;
 }
 #supermenu-mobile  ul  li  div .withoutchild .withchild a:hover {
     background: #333;

@@ -761,6 +761,13 @@ a.button_accent, input.button_accent, .f_form .button{
 .pr_info .cart a.button:hover {
 	background-color: #444444;
 }
+.product_holder_inside .right .cart a.button {
+	background-color:#F71277;
+	color:#FFF;
+}
+.product_holder_inside .right .cart a.button:hover {
+	background-color: #444444;
+}
 .buttons {
 	background: #FFFFFF;
 	overflow: auto;

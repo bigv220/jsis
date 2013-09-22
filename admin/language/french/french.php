@@ -49,10 +49,10 @@ $_['button_invoice']                = 'Imprimer la facture';
 $_['button_add_address']            = 'Ajouter une adresse';
 $_['button_add_attribute']          = 'Ajouter un attribut';
 $_['button_add_banner']             = 'Ajouter une bannière';
-$_['button_add_custom_field_value'] = 'Ajouter un champ spécial';
+$_['button_add_custom_field_value'] = 'Ajouter un champ personnalisé';
 $_['button_add_product']            = 'Ajouter un produit';
 $_['button_add_voucher']            = 'Ajouter un chèque-cadeau';
-$_['button_add_filter']             = 'Ajouter un Filtre';
+$_['button_add_filter']             = 'Ajouter un filtre';
 $_['button_add_option']             = 'Ajouter une option';
 $_['button_add_option_value']       = 'Ajouter une valeur d\'option';
 $_['button_add_discount']           = 'Ajouter une réduction';
@@ -70,6 +70,8 @@ $_['button_add_link']               = 'Ajouter un lien';
 $_['button_update_total']           = 'Mettre à jour les totaux';
 $_['button_approve']                = 'Approuver';
 $_['button_reset']                  = 'Réinitialiser';
+$_['button_add_profile']            = 'Ajouter un profil';
+
 
 // Tab
 $_['tab_address']                   = 'Adresse';
@@ -99,11 +101,13 @@ $_['tab_payment']                   = 'Détails Paiement';
 $_['tab_product']                   = 'Produits';
 $_['tab_return']                    = 'Détails Retour';
 $_['tab_reward']                    = 'Points Fidélité';
+$_['tab_profile']                   = 'Profils';
 $_['tab_shipping']                  = 'Détails Livraison';
 $_['tab_total']                     = 'Totaux';
 $_['tab_transaction']               = 'Transactions';
 $_['tab_voucher']                   = 'Chèques-Cadeaux';
 $_['tab_voucher_history']           = 'Historique Chèques-Cadeaux';
+$_['tab_price']                     = 'Prix';
 
 // Error
 $_['error_upload_1']                = 'Attention: Le fichier envoyé dépasse la directive "upload_max_filesize" définie dans php.ini !';

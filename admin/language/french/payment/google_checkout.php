@@ -9,9 +9,9 @@ $_['text_success']       = 'Succès: Vous avez modifié les détails de paiement
 // Entry
 $_['entry_merchant_id']  = 'ID Marchand:';
 $_['entry_merchant_key'] = 'Clé marchand:';
-$_['entry_callback']     = 'URL de l\'API de rappel:<br /><span class="help">URL pour que Google vous notifie les nouvelles commandes et les changements d\'état de commande. Utilisez notification en HTML.</span>';
+$_['entry_callback']     = 'URL de l\'API de rappel:<br /><span class="help">URL pour que Google vous notifie les nouvelles commandes et les changements d\'état de commande. Utilisez la notification au format HTML.</span>';
 $_['entry_test']         = 'Mode test:';
-$_['entry_total']        = 'Total:<br /><span class="help">Le total à l\'encaissement que la commande doit atteindre avant que cette méthode de paiement devienne active.</span>';
+$_['entry_total']        = 'Total:<br /><span class="help">Le total à l\'encaissement que la commande doit atteindre avant que ce mode de paiement devienne actif.</span>';
 $_['entry_order_status'] = 'État de commande:';
 $_['entry_geo_zone']     = 'Zone géographique:';
 $_['entry_status']       = 'Statut:';

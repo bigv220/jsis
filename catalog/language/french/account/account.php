@@ -17,4 +17,6 @@ $_['text_reward']        = 'Vos points de fidélité';
 $_['text_return']        = 'Voir vos demandes de retour'; 
 $_['text_transaction']   = 'Vos transactions'; 
 $_['text_newsletter']    = 'S\'abonner / Se désabonner à la lettre d\'informations';
+$_['text_recurring']     = 'Paiements récurrents';
+$_['text_transactions']  = 'Transactions';
 ?>

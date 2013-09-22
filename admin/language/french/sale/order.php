@@ -3,6 +3,9 @@
 $_['heading_title']                           = 'Commandes';
 
 // Text
+
+$_['text_amazon_order_id']                    = 'ID de commande Amazon:';
+$_['text_name']                               = 'Nom:';
 $_['text_success']                            = 'Succès: Vous avez modifié les commandes !';
 $_['text_order_id']                           = 'Commande n°:';
 $_['text_invoice_no']                         = 'Facture n°:';
@@ -15,7 +18,7 @@ $_['text_email']                              = 'E-mail:';
 $_['text_telephone']                          = 'Téléphone:';
 $_['text_fax']                                = 'Fax:';
 $_['text_shipping_method']                    = 'Méthode de livraison:';
-$_['text_payment_method']                     = 'Méthode de paiement:';
+$_['text_payment_method']                     = 'Mode de paiement:';
 $_['text_total']                              = 'Total:';
 $_['text_reward']                             = 'Points de fidélité:';
 $_['text_order_status']                       = 'État de la commande:';
@@ -168,7 +171,7 @@ $_['entry_order_status']                      = 'État de la commande:';
 $_['entry_notify']                            = 'Notifier le client:';
 $_['entry_comment']                           = 'Commentaire:';
 $_['entry_shipping']                          = 'Méthode de livraison:';
-$_['entry_payment']                           = 'Méthode de paiement:';
+$_['entry_payment']                           = 'Mode de paiement:';
 $_['entry_coupon']                            = 'Bon de réduction:';
 $_['entry_voucher']                           = 'Chèque-cadeau:';
 $_['entry_reward']                            = 'Fidélité:';
@@ -191,7 +194,7 @@ $_['error_postcode']                          = 'Le code postal doit être compo
 $_['error_country']                           = 'Veuillez sélectionner un pays !';
 $_['error_zone']                              = 'Veuillez sélectionner une région / un département !';
 $_['error_shipping']                          = 'Attention: Méthode de livraison requise !';
-$_['error_payment']                           = 'Attention: Méthode de paiement requise !';
+$_['error_payment']                           = 'Attention: Mode de paiement requis !';
 $_['error_upload']                            = 'Upload requis !';
 $_['error_filename']                          = 'Le nom de fichier doit être composé de 3 à 128 caractères !';
 $_['error_filetype']                          = 'Type de fichier invalide !';

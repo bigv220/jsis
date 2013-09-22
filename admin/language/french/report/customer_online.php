@@ -9,7 +9,7 @@ $_['text_guest']        = 'Invité';
 $_['column_ip']         = 'IP';
 $_['column_customer']   = 'Client';
 $_['column_url']        = 'Dernière page visitée';
-$_['column_referer']    = 'Referer';
+$_['column_referer']    = 'Parrain';
 $_['column_date_added'] = 'Dernier clic';
 $_['column_action']     = 'Action';
 ?>

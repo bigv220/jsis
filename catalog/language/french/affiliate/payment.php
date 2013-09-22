@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title']             = 'Méthode de Paiement';
+$_['heading_title']             = 'Mode de Paiement';
 
 // Text
 $_['text_account']              = 'Compte';
@@ -14,7 +14,7 @@ $_['text_success']              = 'Succès. Votre compte a été mis à jour !';
 
 // Entry
 $_['entry_tax']                 = 'Numéro d\'identification fiscale:';
-$_['entry_payment']             = 'Méthode de paiement:';
+$_['entry_payment']             = 'Mode de paiement:';
 $_['entry_cheque']              = 'Nom du bénéficiaire des chèques:';
 $_['entry_paypal']              = 'Compte e-mail PayPal:';
 $_['entry_bank_name']           = 'Nom de la banque:';

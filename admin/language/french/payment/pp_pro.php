@@ -10,12 +10,12 @@ $_['text_authorization'] = 'Autorisation';
 $_['text_sale']          = 'Vente';
 
 // Entry
-$_['entry_username']     = 'API Nom d\'utilisateur:';
-$_['entry_password']     = 'API Mot de passe:';
-$_['entry_signature']    = 'API Signature:';
+$_['entry_username']     = 'Nom d\'identification API:';
+$_['entry_password']     = 'Mot de passe API:';
+$_['entry_signature']    = 'Signature API:';
 $_['entry_test']         = 'Mode test:<br /><span class="help">Utiliser le serveur de production ou de test (sandbox) pour traiter les transactions ?</span>';
-$_['entry_transaction']  = 'Méthode transaction:';
-$_['entry_total']        = 'Total:<br /><span class="help">Le total à l\'encaissement que la commande doit atteindre avant que cette méthode de paiement devienne active.</span>';
+$_['entry_transaction']  = 'Méthode de transaction:';
+$_['entry_total']        = 'Total:<br /><span class="help">Le total à l\'encaissement que la commande doit atteindre avant que ce mode de paiement devienne actif.</span>';
 $_['entry_order_status'] = 'État de commande:';
 $_['entry_geo_zone']     = 'Zone géographique:';
 $_['entry_status']       = 'Statut:';
@@ -23,7 +23,7 @@ $_['entry_sort_order']   = 'Classement:';
 
 // Error
 $_['error_permission']   = 'Attention: Vous n\'avez pas les droits nécessaires pour modifier le paiement par PayPal Website Payment Pro Checkout !';
-$_['error_username']     = 'API Nom d\'utilisateur requis !'; 
-$_['error_password']     = 'API Mot de passe requis !'; 
-$_['error_signature']    = 'API Signature requise !'; 
+$_['error_username']     = 'Nom d\'identification API requis !'; 
+$_['error_password']     = 'Mot de passe API requis !'; 
+$_['error_signature']    = 'Signature API requise !'; 
 ?>
