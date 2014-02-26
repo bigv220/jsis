@@ -139,7 +139,7 @@ class ControllerCommonHeader extends Controller {
 			}
 		}
 		
-		$this->data['categories'] = null;		$this->children = array(			'module/supermenu',
+		$this->children = array(		
 			'module/language',
 			'module/currency',
 			'module/cart'

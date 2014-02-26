@@ -116,7 +116,6 @@ DD_belatedPNG.fix('#logo img');
 
 
 <!-- PHONE::Start -->
-<?php echo $supermenu; ?>
 <?php if ($categories) { ?>
 <div id="menu-phone" class="shown-phone" style="display: none;">
   <div id="menu-phone-button">Menu</div>

@@ -168,23 +168,23 @@ $("#supermenu ul li.tlli").hover(function() {
 <?php if ($supermenuisresponsive) { ?>
 <div id="supermenu-mobile">
 <ul>
- <li class="tlli"><a class="tll"><?php echo $categ_text; ?></a>
+ <li class="tlli"><a class="tll"><?php echo strtoupper($categ_text); ?></a>
   <div class="bigdiv">
     <?php foreach ($mitems as $mitem) { ?>
 	<div class="withchild">
 	<?php if ($mitem['children']) { ?><span class="toexpand"></span><?php } ?>
-	 <a class="theparent" id="<?php echo $mitem['cssid']; ?>" <?php if ($mitem['tlcolor']) { ?>style="color: <?php echo $mitem['tlcolor']; ?>;" <?php } ?><?php if ($mitem['href']) { ?>href="<?php echo $mitem['href']; ?>"<?php } ?>><?php echo $mitem['name']; ?></a>
+	 <a class="theparent" id="<?php echo $mitem['cssid']; ?>" <?php if ($mitem['tlcolor']) { ?>style="color: <?php echo $mitem['tlcolor']; ?>;" <?php } ?><?php if ($mitem['href']) { ?>href="<?php echo $mitem['href']; ?>"<?php } ?>><?php echo strtoupper($mitem['name']); ?></a>
 	 
 	<?php if ($mitem['children']) { ?>
 	  <ul>
 	   <?php foreach ($mitem['children'] as $mildren) { ?>
         <li>
-		  <a  href="<?php echo $mildren['href']; ?>"><?php echo $mildren['name']; ?></a>
+		  <a  href="<?php echo $mildren['href']; ?>"><?php echo strtoupper($mildren['name']); ?></a>
 		  <?php if ($mildren['gchildren']) { ?>
 		  <span class="toexpandkids"></span>
            <ul class="child-level">
             <?php foreach ($mildren['gchildren'] as $gmildren) { ?>
-             <li><a href="<?php echo $gmildren['href']; ?>"><?php echo $gmildren['name']; ?></a></li>
+             <li><a href="<?php echo $gmildren['href']; ?>"><?php echo strtoupper($gmildren['name']); ?></a></li>
             <?php } ?>
            </ul>
 		  <?php } ?>
