@@ -86,33 +86,28 @@ DD_belatedPNG.fix('#logo img');
  
 </div>
 
-<?php if ($categories) { ?>
 <div id="menu-holder" class="hidden-phone">
 <div id="menu">
   <ul>
   	<li><a href="<?php echo $home; ?>"><span class='home_icon'></span></a>
-    <?php foreach ($categories as $category) { ?>
-    <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
-      <?php if ($category['children']) { ?>
-      <div>
-        <?php for ($i = 0; $i < count($category['children']);) { ?>
+    <li class="long"><a href="<?php echo $home; ?>">首页</a></li>
+    <li class="long"><a href="<?php echo $aboutus; ?>">公司简介</a></li>
+    <li class="long"><a href="<?php echo $base; ?>">产品中心</a>
+        <div>
         <ul>
-          <?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
-          <?php for (; $i < $j; $i++) { ?>
-          <?php if (isset($category['children'][$i])) { ?>
-          <li><a<?php echo ($i==(count($category['children'])-1) ? " class='last_submenu_item'" : '');?> href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name']; ?></a></li>
-          <?php } ?>
-          <?php } ?>
-        </ul>
-        <?php } ?>
-      </div>
+        <?php foreach ($categories as $category) { ?>
+      <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
+      </li>
       <?php } ?>
+        </ul>
+        </div>
     </li>
-    <?php } ?>
+    <li class="long"><a href="<?php echo $base; ?>">新闻动态</a></li>
+    <li class="long"><a href="<?php echo $yuanjing; ?>">企业愿景</a></li>
+    <li class="long"><a href="<?php echo $contact; ?>">联系我们</a></li>
   </ul>
 </div>
 </div>
-<?php } ?>
 
 
 <!-- PHONE::Start -->
@@ -136,15 +131,5 @@ DD_belatedPNG.fix('#logo img');
 <?php } ?>
 
 <!-- PHONE::End -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-44059444-1', 'jsistersboutique.com');
-  ga('send', 'pageview');
-
-</script>
 
 <div id="notification"></div>

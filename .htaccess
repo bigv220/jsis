@@ -1,10 +1,7 @@
+# SEO URL Settings
+RewriteEngine On
 
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^jsisters\.ca$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.jsisters\.ca$
-RewriteRule ^/?$ "http\:\/\/www\.jsistersboutique\.com\/" [R=301,L]
-
-RewriteCond %{HTTP_HOST} ^jsistersboutique.com
-RewriteRule (.*) http://www.jsistersboutique.com/$1 [R=301,L]
-
-ErrorDocument 404 http://www.jsistersboutique.com/
+RewriteBase /jsister/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^?]*) index.php?_route_=$1 [L,QSA]
