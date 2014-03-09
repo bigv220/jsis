@@ -92,7 +92,7 @@ DD_belatedPNG.fix('#logo img');
   	<li><a href="<?php echo $home; ?>"><span class='home_icon'></span></a>
     <li class="long"><a href="<?php echo $home; ?>">首页</a></li>
     <li class="long"><a href="<?php echo $aboutus; ?>">公司简介</a></li>
-    <li class="long"><a href="<?php echo $base; ?>">产品中心</a>
+    <li class="long"><a href="<?php echo $product_link; ?>">产品中心</a>
         <div>
         <ul>
         <?php foreach ($categories as $category) { ?>
