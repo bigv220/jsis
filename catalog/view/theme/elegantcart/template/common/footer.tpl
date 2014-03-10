@@ -52,7 +52,7 @@
   </div>  
   <div class="clear"></div>
   <div class="footer_btm">
-      <div id="powered"><a href="http://www.blueowlcreative.com" target="_blank">ElegantCart Theme</a> © <?php echo date("Y");?>  &nbsp; |  &nbsp;  Powered by <a href="http://www.opencart.com/" target="_blank">OpenCart</a></div>
+      <div id="powered">Copyright © <?php echo date("Y");?>  &nbsp; |  &nbsp;  <a href="http://www.xxr178.com/" target="_blank">青岛玺鑫荣贸易有限公司</a> 版权所有</div>
   </div>
 </div>
 

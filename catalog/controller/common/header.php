@@ -61,7 +61,11 @@ class ControllerCommonHeader extends Controller {
 		$this->data['account'] = $this->url->link('account/account', '', 'SSL');
 		$this->data['shopping_cart'] = $this->url->link('checkout/cart');
 		$this->data['checkout'] = $this->url->link('checkout/checkout', '', 'SSL');
-		
+        // 菜单
+        $this->data['contact'] = $this->url->link('information/contact', '', 'SSL');
+        $this->data['yuanjing'] = $this->url->link('information/information', 'information_id=3',  'SSL');
+        $this->data['aboutus'] = $this->url->link('information/information', 'information_id=4', 'SSL');
+        $this->data['product_link'] = $this->url->link('product/category', 'path=45', 'SSL');
 		// Daniel's robot detector
 		$status = true;
 		
@@ -107,7 +111,7 @@ class ControllerCommonHeader extends Controller {
 		$this->data['categories'] = array();
 					
 		$categories = $this->model_catalog_category->getCategories(0);
-		
+
 		foreach ($categories as $category) {
 			if ($category['top']) {
 				// Level 2
