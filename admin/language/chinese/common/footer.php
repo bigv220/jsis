@@ -1,4 +1,4 @@
 <?php
 // Text
-$_['text_footer'] = 'çôöÎÈÙ°æÈ¨ËùÓÐ';
+$_['text_footer'] = '';
 ?>
