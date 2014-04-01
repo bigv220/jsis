@@ -7,28 +7,25 @@
         <?php echo $heading_title; ?>
     </div>
     <div class="box-content">
-        <table  style="border-spacing:0px; border-style:none;">
-          <tbody>
+        <div style="overflow:hidden;" class="article_list-layer5E374E981DCAE2FA7C3393BD338C4C99">
             <?php if ($yynewss) { ?>
             <?php foreach ($yynewss as $yynews) { ?>
-            <tr>
-             <?php if ($display_titleimage) {?> <td class="left" width="65px" ><?php echo ($yynews['titleimage']!="")? "<img width=\"64px\" high=\"64px\" src=\"{$yynews['titleimage']} \"  >":"";  ?></td><?php } ?>
-              <td class="left">
-                <a href="<?php echo $yynews['action'][0]['href']; ?>"><?php echo $yynews['title']; ?></a>
-                <br />
-                <span><?php echo $yynews['summary']; ?></span>
-               <a href="<?php echo $yynews['action'][0]['href']; ?>" style="text-decoration: none;"><?php echo $yynews['action'][0]['text']; ?>...</a>
-                <div sytle="position:right"><?php echo $yynews['newsdate']; ?></div>
-              </td>
-            </tr>
+            <ul>
+                <li class="wpart-border-line">
+                    <p class="link title">
+                        <?php if ($display_titleimage) {?> <?php echo ($yynews['titleimage']!="")? "<img width=\"64px\" high=\"64px\" src=\"{$yynews['titleimage']} \"  >":"";  ?><?php } ?>
+                        <span class="category"></span>
+                        <a href="<?php echo $yynews['action'][0]['href']; ?>"><?php echo $yynews['title']; ?></a>
+                    </p>
+                    <p class="time"><span class="wp-new-ar-pro-time"><?php echo $yynews['newsdate']; ?></span></p>
+                </li>
+            </ul>
             <?php } ?>
             <?php } else { ?>
-            <tr>
-              <td class="center" colspan="4"><?php echo $text_no_results; ?></td>
-            </tr>
+            <?php echo $text_no_results; ?>
             <?php } ?>
-          </tbody>
-        </table>
+        </div>
+
       <div class="pagination"><?php echo $pagination; ?></div>
     </div>
   </div>

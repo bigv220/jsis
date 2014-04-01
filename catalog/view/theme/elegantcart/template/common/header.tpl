@@ -102,7 +102,7 @@ DD_belatedPNG.fix('#logo img');
         </ul>
         </div>
     </li>
-    <li class="long"><a href="<?php echo $base; ?>">新闻动态</a></li>
+    <li class="long"><a href="<?php echo $news; ?>">新闻动态</a></li>
     <li class="long"><a href="<?php echo $yuanjing; ?>">企业愿景</a></li>
     <li class="long"><a href="<?php echo $contact; ?>">联系我们</a></li>
   </ul>

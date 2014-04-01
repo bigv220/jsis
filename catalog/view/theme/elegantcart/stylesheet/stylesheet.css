@@ -3351,4 +3351,44 @@ ZOOM : END
 	
 }
 
+ol, ul, li {
+    list-style-type: none;
+}
+.article_list-layer5E374E981DCAE2FA7C3393BD338C4C99 .wpart-border-line {
+    border-bottom: 1px dashed #C6C6C6;
+}
+.article_list-layer5E374E981DCAE2FA7C3393BD338C4C99 ul li {
+    overflow: hidden;
+}
+.article_list-layer5E374E981DCAE2FA7C3393BD338C4C99 p.link {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    margin-left: 3px;
+}
+.article_list-layer5E374E981DCAE2FA7C3393BD338C4C99 ul li p {
+    height: 10px;
+    line-height: 28px;
+}
+.article_list-layer5E374E981DCAE2FA7C3393BD338C4C99 span.category > a {
+    color: #0064D4;
+    display: inline-block;
+    font-family: SimSun;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+}
+.article_list-layer5E374E981DCAE2FA7C3393BD338C4C99 span.category a, .article_list-layer5E374E981DCAE2FA7C3393BD338C4C99 span.category a:visited {
+    color: #0064D4;
+    margin-right: 5px;
+    text-decoration: none;
+}
+.article_list-layer5E374E981DCAE2FA7C3393BD338C4C99 p.title a, .article_list-layer5E374E981DCAE2FA7C3393BD338C4C99 p.title a:visited {
+    color: #5A5A5A;
+    text-decoration: none;
+}
+.article_list-layer5E374E981DCAE2FA7C3393BD338C4C99 p.time {
+    float: right;
+    margin-right: 3px;
+}
+
 /* Mobile Themes :: End */
