@@ -1512,7 +1512,7 @@ a.button_accent, input.button_accent, .f_form .button{
 .product-grid .product_holder {
 	float: none;
 	display: inline-block;
-	width: 178px;
+	width: 242px;
 	margin: 0 15px 15px 0;
 	position: relative; 
 }
@@ -1607,7 +1607,6 @@ h1.pr_name {
 .product-info .image-additional img {
 	border: 1px solid #eee;
 	width: 94px;
-	height: 94px;
     padding: 3px;
 }
 .product-info .image-additional a {
