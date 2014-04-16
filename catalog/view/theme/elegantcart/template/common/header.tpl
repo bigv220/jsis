@@ -32,8 +32,6 @@
 <script type="text/javascript" src="catalog/view/theme/elegantcart/javascript/elegantcart_custom.js"></script>
 <script type="text/javascript" src="catalog/view/theme/elegantcart/javascript/cloud_zoom.js"></script>
 
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-
 <?php foreach ($scripts as $script) { ?>
 <script type="text/javascript" src="<?php echo $script; ?>"></script>
 <?php } ?>
