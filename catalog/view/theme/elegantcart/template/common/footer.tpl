@@ -52,6 +52,21 @@
   </div>  
   <div class="clear"></div>
   <div class="footer_btm">
+      <div class="ol_customer">
+          在线客服：
+          <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1457328016&amp;site=玺鑫荣&amp;Menu=yes" target="blank">
+              <img border="0" alt="点击发送消息给对方" src="http://wpa.qq.com/pa?p=2:1457328016:52">1457328016
+          </a>&nbsp;&nbsp;
+          <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2979651300&amp;site=玺鑫荣&amp;Menu=yes" target="blank">
+              <img border="0" alt="点击发送消息给对方" src="http://wpa.qq.com/pa?p=2:2979651300:52">2979651300
+          </a>&nbsp;&nbsp;
+          <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2508407356&amp;site=玺鑫荣&amp;Menu=yes" target="blank">
+              <img border="0" alt="点击发送消息给对方" src="http://wpa.qq.com/pa?p=2:2508407356:52">2508407356
+          </a>&nbsp;&nbsp;
+          <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2842162274&amp;site=玺鑫荣&amp;Menu=yes" target="blank">
+              <img border="0" alt="点击发送消息给对方" src="http://wpa.qq.com/pa?p=2:2842162274:52">2842162274
+          </a>
+      </div>
       <div id="powered">Copyright © <?php echo date("Y");?>  &nbsp; |  &nbsp;  <a href="http://www.xxr178.com/" target="_blank">青岛玺鑫荣贸易有限公司</a> 版权所有</div>
   </div>
 </div>
