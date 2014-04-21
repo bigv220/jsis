@@ -1041,9 +1041,6 @@ a.button_accent, input.button_accent, .f_form .button{
 .ol_customer {
     color:white;
 }
-.ol_customer a {
-    color:white;
-}
 .product_holder:hover {
 	border: 1px solid #ddd;
 }
@@ -2529,6 +2526,9 @@ a.icon_google:hover {
 }
 #footer a:hover {
 	color: #888;
+}
+.ol_customer a {
+    color:white;
 }
 #powered {
 	text-align: right;
