@@ -10,6 +10,9 @@ $_['text_email']     = '邮箱：';
 $_['text_telephone'] = '电话：';
 $_['text_fax']       = '传真：';
 $_['text_message']   = '<p>您的查询已发送！</p>';
+$_['online_qq']     = '在线客服:';
+$_['company_name']  = '玺鑫荣';
+$_['click_send_msg']  = '点击发送消息给对方';
 
 // Entry Fields
 $_['entry_name']     = '您的姓名：';

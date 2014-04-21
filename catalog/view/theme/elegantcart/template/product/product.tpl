@@ -28,7 +28,13 @@
 
     <div class="right"> 
       <h1 class="pr_name"><?php echo $heading_title; ?></h1>
- 
+
+      <div class="price"><span class="txt_price"><?php echo $date_added_txt; ?>
+          <?php echo $date_available; ?></span></div>
+      <div class="price">
+          <span class="txt_price"><?php echo $quantity_txt; ?>
+          <?php echo $quantity; ?></span>
+      </div>
       <?php if ($price) { ?>
       <div class="price">
       	<span class="txt_price"><?php echo $text_price; ?></span>
@@ -244,7 +250,13 @@
     <a href="#tab-review"><?php echo $tab_review; ?></a>
     <?php } ?>
   </div>
-  <div id="tab-description" class="tab-content"><?php echo $description; ?></div>
+  <div id="tab-description" class="tab-content">
+      <?php echo $description; ?>
+      <?php if ($images) { ?>
+      <?php foreach ($images as $image) { ?>
+      <img src="<?php echo $image['image']; ?>" alt = ""/>
+      <?php }} ?>
+      </div>
   <?php if ($attribute_groups) { ?>
   <div id="tab-attribute" class="tab-content">
     <table class="attribute">

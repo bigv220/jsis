@@ -22,6 +22,22 @@
         <b><?php echo $text_fax; ?></b><br />
         <?php echo $fax; ?>
         <?php } ?>
+
+          <div>
+              <?php echo $online_qq; ?>
+                  <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1457328016&amp;site=<?php echo $company_name; ?>&amp;Menu=yes" target="blank">
+                      <img border="0" alt="<?php echo $click_send_msg; ?>" src="http://wpa.qq.com/pa?p=2:1457328016:52">1457328016
+                  </a>
+                  <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2979651300&amp;site=<?php echo $company_name; ?>&amp;Menu=yes" target="blank">
+                      <img border="0" alt="<?php echo $click_send_msg; ?>" src="http://wpa.qq.com/pa?p=2:2979651300:52">2979651300
+                  </a>
+                  <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2508407356&amp;site=<?php echo $company_name; ?>&amp;Menu=yes" target="blank">
+                      <img border="0" alt="<?php echo $click_send_msg; ?>" src="http://wpa.qq.com/pa?p=2:2508407356:52">2508407356
+                  </a>
+                  <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2842162274&amp;site=<?php echo $company_name; ?>&amp;Menu=yes" target="blank">
+                      <img border="0" alt="<?php echo $click_send_msg; ?>" src="http://wpa.qq.com/pa?p=2:2842162274:52">2842162274
+                  </a>
+          </div>
       </div>
     </div>
     </div>

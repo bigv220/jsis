@@ -370,11 +370,11 @@ class ModelCatalogProduct extends Model {
 			'p.status',
 			'p.sort_order'
 		);	
-		
+
 		if (isset($data['sort']) && in_array($data['sort'], $sort_data)) {
 			$sql .= " ORDER BY " . $data['sort'];	
 		} else {
-			$sql .= " ORDER BY pd.name";	
+			$sql .= " ORDER BY pd.product_id";
 		}
 		
 		if (isset($data['order']) && ($data['order'] == 'DESC')) {
