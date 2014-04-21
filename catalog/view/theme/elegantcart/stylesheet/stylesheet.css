@@ -6,7 +6,7 @@ html {
 body {
 	background: #f5f5f5 url('../image/main_bgr.png');
 	color: #444444;
-    font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"ËÎÌå";
+    font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"å®‹ä½“";
 	margin: 0px;
 	padding: 0px;
 }
@@ -572,7 +572,7 @@ label {
 	color: #999;
 	text-transform: uppercase;
 	font-size: 12px;
-    font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"ËÎÌå";
+    font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"å®‹ä½“";
 	font-weight: 300;
 }
 .success, .warning, .attention, .information {
@@ -2527,9 +2527,7 @@ a.icon_google:hover {
 #footer a:hover {
 	color: #888;
 }
-.ol_customer a {
-    color:white;
-}
+
 #powered {
 	text-align: right;
 	clear: both;
