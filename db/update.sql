@@ -1,0 +1,1 @@
+alter table js_customer add column card_id char(15);

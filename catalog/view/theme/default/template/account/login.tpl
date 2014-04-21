@@ -26,7 +26,7 @@
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
         <div class="content">
           <p><?php echo $text_i_am_returning_customer; ?></p>
-          <b><?php echo $entry_email; ?></b><br />
+          <b><?php echo $entry_tel_card; ?></b><br />
           <input type="text" name="email" value="<?php echo $email; ?>" />
           <br />
           <br />

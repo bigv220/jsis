@@ -22,6 +22,7 @@
             <span class="error"><?php echo $error_firstname; ?></span>
             <?php } ?></td>
         </tr>
+        <!--
         <tr>
           <td><span class="required">*</span> <?php echo $entry_lastname; ?></td>
           <td><input type="text" name="lastname" value="<?php echo $lastname; ?>" />
@@ -29,8 +30,16 @@
             <span class="error"><?php echo $error_lastname; ?></span>
             <?php } ?></td>
         </tr>
+        -->
+          <tr>
+              <td><?php echo $entry_card_id; ?></td>
+              <td><input type="text" name="card_id" value="<?php echo $card_id; ?>" />
+                  <?php if ($error_card_id) { ?>
+                  <span class="error"><?php echo $error_card_id; ?></span>
+                  <?php } ?></td>
+          </tr>
         <tr>
-          <td><span class="required">*</span> <?php echo $entry_email; ?></td>
+          <td><?php echo $entry_email; ?></td>
           <td><input type="text" name="email" value="<?php echo $email; ?>" />
             <?php if ($error_email) { ?>
             <span class="error"><?php echo $error_email; ?></span>
@@ -71,14 +80,14 @@
             <?php } ?></td>
         </tr>      
         <tr id="company-id-display">
-          <td><span id="company-id-required" class="required">*</span> <?php echo $entry_company_id; ?></td>
+          <td><?php echo $entry_company_id; ?></td>
           <td><input type="text" name="company_id" value="<?php echo $company_id; ?>" />
             <?php if ($error_company_id) { ?>
             <span class="error"><?php echo $error_company_id; ?></span>
             <?php } ?></td>
         </tr>
         <tr id="tax-id-display">
-          <td><span id="tax-id-required" class="required">*</span> <?php echo $entry_tax_id; ?></td>
+          <td><?php echo $entry_tax_id; ?></td>
           <td><input type="text" name="tax_id" value="<?php echo $tax_id; ?>" />
             <?php if ($error_tax_id) { ?>
             <span class="error"><?php echo $error_tax_id; ?></span>
