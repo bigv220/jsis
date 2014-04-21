@@ -1035,6 +1035,12 @@ a.button_accent, input.button_accent, .f_form .button{
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;   
 }
+.featured_product {
+    width:226px;
+}
+.ol_customer {
+    color:white;
+}
 .product_holder:hover {
 	border: 1px solid #ddd;
 }
@@ -1636,7 +1642,6 @@ h1.pr_name {
 .product-info .price {
 	overflow: auto;
 	padding: 0px 0px 10px 0px;
-	margin-bottom: 10px;
 	color: #333333;
 	
 	font-size: 19px;
@@ -2521,6 +2526,9 @@ a.icon_google:hover {
 }
 #footer a:hover {
 	color: #888;
+}
+.ol_customer a {
+    color:white;
 }
 #powered {
 	text-align: right;
