@@ -27,6 +27,7 @@ $_['text_upload']         = '成功上传文件！';
 $_['text_wait']           = '请稍候！';
 $_['text_tags']           = '标签：';
 $_['text_error']          = '此商品不存在！';
+$_['date_added_txt']       = '上市时间：';
 
 // Entry
 $_['entry_name']          = '您的姓名：';
@@ -35,6 +36,7 @@ $_['entry_rating']        = '顾客评分：';
 $_['entry_good']          = '好评';
 $_['entry_bad']           = '差评';
 $_['entry_captcha']       = '请在下框输入验证码：';
+$_['quantity_txt']      = '库存:';
 
 // Tabs
 $_['tab_description']     = '产品详细介绍';
