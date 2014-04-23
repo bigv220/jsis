@@ -14,11 +14,11 @@ $_['text_your_password']   = '您的账户密码';
 $_['text_agree']           = '我已经阅读并同意 <a class="colorbox" href="%s" alt="%s"><b>%s</b></a>条款';
 
 // Entry
-$_['entry_firstname']      = '您的姓名：';
+$_['entry_firstname']      = '用户名：';
 $_['entry_lastname']       = '您的姓氏：';
-$_['entry_email']          = '电子邮箱：';
+$_['entry_email']          = '&nbsp;&nbsp;电子邮箱：';
 $_['entry_telephone']      = '手机：';
-$_['entry_card_id']      = '卡号：';
+$_['entry_card_id']      = '&nbsp;&nbsp;卡号：';
 $_['entry_fax']            = '&nbsp;&nbsp;传真号码：';
 $_['entry_account']        = '公司帐号：';
 $_['entry_company']        = '&nbsp;&nbsp;公司名称：';

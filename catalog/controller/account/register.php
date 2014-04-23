@@ -14,12 +14,12 @@ class ControllerAccountRegister extends Controller {
 		$this->document->addStyle('catalog/view/javascript/jquery/colorbox/colorbox.css');
 					
 		$this->load->model('account/customer');
-		
+
     	if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
 			$this->model_account_customer->addCustomer($this->request->post);
 
 			$this->customer->login($this->request->post['telephone'],$this->request->post['password']);
-			
+
 			unset($this->session->data['guest']);
 
 			// Default Shipping Address
@@ -110,17 +110,17 @@ class ControllerAccountRegister extends Controller {
 			$this->data['error_card_id'] = '';
 		}
 		
-//		if (isset($this->error['lastname'])) {
-//			$this->data['error_lastname'] = $this->error['lastname'];
-//		} else {
-//			$this->data['error_lastname'] = '';
-//		}
+		if (isset($this->error['lastname'])) {
+			$this->data['error_lastname'] = $this->error['lastname'];
+		} else {
+			$this->data['error_lastname'] = '';
+		}
 	
-//		if (isset($this->error['email'])) {
-//			$this->data['error_email'] = $this->error['email'];
-//		} else {
-//			$this->data['error_email'] = '';
-//		}
+		if (isset($this->error['email'])) {
+			$this->data['error_email'] = $this->error['email'];
+		} else {
+			$this->data['error_email'] = '';
+		}
 		
 		if (isset($this->error['telephone'])) {
 			$this->data['error_telephone'] = $this->error['telephone'];
@@ -140,17 +140,17 @@ class ControllerAccountRegister extends Controller {
 			$this->data['error_confirm'] = '';
 		}
 		
-//  		if (isset($this->error['company_id'])) {
-//			$this->data['error_company_id'] = $this->error['company_id'];
-//		} else {
-//			$this->data['error_company_id'] = '';
-//		}
+  		if (isset($this->error['company_id'])) {
+			$this->data['error_company_id'] = $this->error['company_id'];
+		} else {
+			$this->data['error_company_id'] = '';
+		}
 		
-//  		if (isset($this->error['tax_id'])) {
-//			$this->data['error_tax_id'] = $this->error['tax_id'];
-//		} else {
-//			$this->data['error_tax_id'] = '';
-//		}
+  		if (isset($this->error['tax_id'])) {
+			$this->data['error_tax_id'] = $this->error['tax_id'];
+		} else {
+			$this->data['error_tax_id'] = '';
+		}
 								
   		if (isset($this->error['address_1'])) {
 			$this->data['error_address_1'] = $this->error['address_1'];
@@ -190,11 +190,11 @@ class ControllerAccountRegister extends Controller {
 			$this->data['firstname'] = '';
 		}
 
-//		if (isset($this->request->post['lastname'])) {
-//    		$this->data['lastname'] = $this->request->post['lastname'];
-//		} else {
-//			$this->data['lastname'] = '';
-//		}
+		if (isset($this->request->post['lastname'])) {
+    		$this->data['lastname'] = $this->request->post['lastname'];
+		} else {
+			$this->data['lastname'] = '';
+		}
 
         if (isset($this->request->post['card_id'])) {
     		$this->data['card_id'] = $this->request->post['card_id'];
@@ -487,6 +487,25 @@ class ControllerAccountRegister extends Controller {
 		}
 		
 		$this->response->setOutput(json_encode($json));
-	}	
+	}
+
+    public function import() {
+        $user = file(DIR_DOWNLOAD."1000.txt"); //密码字典
+        $this->load->model('account/customer');
+
+        for($i=0;$i<count($user);$i++){
+            $line=$user[$i];
+            $arr = explode(' ',$line);
+            $card_id=$arr[0];
+            $name = $arr[1];
+            $phone = $arr[2];
+
+            $post = array('firstname'=>$name,'lastname'=>'','telephone'=>$phone, 'card_id'=>$card_id,
+            'email'=>'','fax'=>'','company'=>'','company_id'=>'','tax_id'=>'','address_1'=>'','address_2'=>'','city'=>'青岛','postcode'=>'266000',
+            'country_id'=>44,'zone_id'=>707,'password'=>'12345','confirm'=>'12345','newsletter'=> 0);
+
+            $this->model_account_customer->addCustomer($post);
+        }
+    }
 }
 ?>

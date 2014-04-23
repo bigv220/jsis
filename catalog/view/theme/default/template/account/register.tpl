@@ -22,15 +22,20 @@
             <span class="error"><?php echo $error_firstname; ?></span>
             <?php } ?></td>
         </tr>
-        <!--
-        <tr>
+        <tr style="display:none">
           <td><span class="required">*</span> <?php echo $entry_lastname; ?></td>
           <td><input type="text" name="lastname" value="<?php echo $lastname; ?>" />
             <?php if ($error_lastname) { ?>
             <span class="error"><?php echo $error_lastname; ?></span>
             <?php } ?></td>
         </tr>
-        -->
+          <tr>
+              <td><span class="required">*</span> <?php echo $entry_telephone; ?></td>
+              <td><input type="text" name="telephone" value="<?php echo $telephone; ?>" />
+                  <?php if ($error_telephone) { ?>
+                  <span class="error"><?php echo $error_telephone; ?></span>
+                  <?php } ?></td>
+          </tr>
           <tr>
               <td><?php echo $entry_card_id; ?></td>
               <td><input type="text" name="card_id" value="<?php echo $card_id; ?>" />
@@ -43,13 +48,6 @@
           <td><input type="text" name="email" value="<?php echo $email; ?>" />
             <?php if ($error_email) { ?>
             <span class="error"><?php echo $error_email; ?></span>
-            <?php } ?></td>
-        </tr>
-        <tr>
-          <td><span class="required">*</span> <?php echo $entry_telephone; ?></td>
-          <td><input type="text" name="telephone" value="<?php echo $telephone; ?>" />
-            <?php if ($error_telephone) { ?>
-            <span class="error"><?php echo $error_telephone; ?></span>
             <?php } ?></td>
         </tr>
         <tr>
@@ -78,15 +76,15 @@
             <br />
             <?php } ?>
             <?php } ?></td>
-        </tr>      
-        <tr id="company-id-display">
+        </tr>
+        <tr id="company-id-display" style="display:none">
           <td><?php echo $entry_company_id; ?></td>
           <td><input type="text" name="company_id" value="<?php echo $company_id; ?>" />
             <?php if ($error_company_id) { ?>
             <span class="error"><?php echo $error_company_id; ?></span>
             <?php } ?></td>
         </tr>
-        <tr id="tax-id-display">
+        <tr id="tax-id-display" style="display:none">
           <td><?php echo $entry_tax_id; ?></td>
           <td><input type="text" name="tax_id" value="<?php echo $tax_id; ?>" />
             <?php if ($error_tax_id) { ?>
