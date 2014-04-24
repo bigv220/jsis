@@ -11,5 +11,4 @@ $_['text_account']  		= '会员中心';
 $_['text_checkout'] 		= '去结账';
 $_['text_language'] 		= '语言';
 $_['text_currency'] 		= '货币';
-$_['text_recurring']    = '退款';
 ?>
