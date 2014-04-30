@@ -357,7 +357,9 @@ class ControllerUserUserPermission extends Controller {
 				$this->data['permissions'][] = $permission;
 			}
 		}
-		
+        // 新闻模块
+        $this->data['permissions'][] = "module/yynews/getList";
+
 		if (isset($this->request->post['permission']['access'])) {
 			$this->data['access'] = $this->request->post['permission']['access'];
 		} elseif (isset($user_group_info['permission']['access'])) {
