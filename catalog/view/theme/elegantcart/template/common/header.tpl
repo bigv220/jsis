@@ -72,6 +72,8 @@ DD_belatedPNG.fix('#logo img');
 	  <div class="links" id="header_links"><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a> <a href="<?php echo $account; ?>"><?php echo $text_account; ?></a><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></div>
 	  <?php echo $cart; ?>
   <div id='header_btm' <?php if ($is_mobile):?>style="margin-top:-80px;"<?php endif;?>>
+
+    <input type="button" style="font-size:13px;font-weight:bold;" class="button" id="button-cart" value="<?php echo '访问量: '. $num_visitors; ?> "/>
   	<div id="search">
 	  	<div class="search_inside">
 			<input type="text" name="search" placeholder="<?php echo $text_search; ?>" value="" />

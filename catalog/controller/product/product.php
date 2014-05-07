@@ -687,9 +687,9 @@ class ControllerProductProduct extends Controller {
 				$json['error'] = $this->language->get('error_name');
 			}
 			
-			if ((utf8_strlen($this->request->post['text']) < 25) || (utf8_strlen($this->request->post['text']) > 1000)) {
-				$json['error'] = $this->language->get('error_text');
-			}
+//			if ((utf8_strlen($this->request->post['text']) < 25) || (utf8_strlen($this->request->post['text']) > 1000)) {
+//				$json['error'] = $this->language->get('error_text');
+//			}
 	
 			if (empty($this->request->post['rating'])) {
 				$json['error'] = $this->language->get('error_rating');

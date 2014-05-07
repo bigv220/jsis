@@ -67,6 +67,17 @@ class ControllerCommonHeader extends Controller {
         $this->data['aboutus'] = $this->url->link('information/information', 'information_id=4', 'SSL');
         $this->data['product_link'] = $this->url->link('product/category', 'path=45', 'SSL');
         $this->data['news'] = $this->url->link('information/news', '', 'SSL');
+        // Visit count
+        $this->load->model('module/visitor_counter');
+        $results = $this->model_module_visitor_counter->getVisitors();
+        foreach ($results as $result) {
+            $num_visitors += $result['count'];
+        }
+        $filler_text = "00000000";
+        if (strlen("$num_visitors") < 8) {
+            $num_visitors = substr($filler_text, 0, (8-strlen("$num_visitors"))) . "$num_visitors";
+        }
+        $this->data['num_visitors'] = $num_visitors;
 		// Daniel's robot detector
 		$status = true;
 		

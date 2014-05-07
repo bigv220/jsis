@@ -291,17 +291,18 @@
     <textarea name="text" cols="40" rows="8" style="width: 98%;" class='ie_left'></textarea>
     <span style="font-size: 11px;"><?php echo $text_note; ?></span><br />
     <br />
-    <b class='r_label'><?php echo $entry_rating; ?></b> <span><?php echo $entry_bad; ?></span>&nbsp;
-    <input type="radio" name="rating" value="1" />
-    &nbsp;
-    <input type="radio" name="rating" value="2" />
-    &nbsp;
-    <input type="radio" name="rating" value="3" />
-    &nbsp;
-    <input type="radio" name="rating" value="4" />
-    &nbsp;
-    <input type="radio" name="rating" value="5" />
-    &nbsp; <span><?php echo $entry_good; ?></span><br />
+    <b class='r_label'><?php echo $entry_rating; ?></b>
+
+      <span><?php echo $entry_good; ?></span>
+      <input type="radio" name="rating" value="5" />
+      &nbsp;
+      中评
+      <input type="radio" name="rating" value="3" />
+      &nbsp;
+      <span><?php echo $entry_bad; ?></span>&nbsp;
+      <input type="radio" name="rating" value="1" />
+      &nbsp;
+      <br />
     <br />
     <div class='r_label'><?php echo $entry_captcha; ?></div>
     <input type="text" name="captcha" value=""  class='ie_left'/>
