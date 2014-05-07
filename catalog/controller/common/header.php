@@ -69,6 +69,7 @@ class ControllerCommonHeader extends Controller {
         $this->data['news'] = $this->url->link('information/news', '', 'SSL');
         // Visit count
         $this->load->model('module/visitor_counter');
+        $this->model_module_visitor_counter->addVisitor($this->request->server['REMOTE_ADDR']);
         $results = $this->model_module_visitor_counter->getVisitors();
         foreach ($results as $result) {
             $num_visitors += $result['count'];
