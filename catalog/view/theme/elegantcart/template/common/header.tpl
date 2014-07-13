@@ -59,7 +59,7 @@ DD_belatedPNG.fix('#logo img');
   <?php } ?>
 <div id="header">
   <?php if ($logo && !$is_mobile) { ?>
-  <div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
+  <div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>?2014" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
   <?php } ?>
 	  <div id="welcome">
 	    <?php if (!$logged) { ?>
