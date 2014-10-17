@@ -65,6 +65,8 @@ class ControllerCommonHeader extends Controller {
         $this->data['contact'] = $this->url->link('information/contact', '', 'SSL');
         $this->data['yuanjing'] = $this->url->link('information/information', 'information_id=3',  'SSL');
         $this->data['aboutus'] = $this->url->link('information/information', 'information_id=4', 'SSL');
+        $this->data['product'] = $this->url->link('product/category', 'path=45', 'SSL');
+
 		// Daniel's robot detector
 		$status = true;
 		
