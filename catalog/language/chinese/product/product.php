@@ -15,7 +15,8 @@ $_['text_option']         = '选项及配件：';
 $_['text_qty']            = '购买数量：';
 $_['text_minimum']        = '(本产品的最小起订量为 %s)';
 $_['text_or']             = '- 或 -';
-$_['text_reviews']        = '%s 评价'; 
+$_['text_reviews']        = '%s 评价';
+$_['text_write_product']          = '评论此商品';
 $_['text_write']          = '如果您对本商品有什么问题或经验，请在此留下您的意见和建议！';
 $_['text_no_reviews']     = '此商品暂无评论。';
 $_['text_on']           = ' on ';
@@ -26,6 +27,7 @@ $_['text_upload']         = '成功上传文件！';
 $_['text_wait']           = '请稍候！';
 $_['text_tags']           = '标签：';
 $_['text_error']          = '此商品不存在！';
+$_['date_added_txt']       = '上市时间：';
 
 // Entry
 $_['entry_name']          = '您的姓名：';
@@ -34,6 +36,7 @@ $_['entry_rating']        = '顾客评分：';
 $_['entry_good']          = '好评';
 $_['entry_bad']           = '差评';
 $_['entry_captcha']       = '请在下框输入验证码：';
+$_['quantity_txt']      = '库存:';
 
 // Tabs
 $_['tab_description']     = '产品详细介绍';

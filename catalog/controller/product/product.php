@@ -163,7 +163,7 @@ class ControllerProductProduct extends Controller {
 		$this->load->model('catalog/product');
 		
 		$product_info = $this->model_catalog_product->getProduct($product_id);
-		
+
 		if ($product_info) {
 			$url = '';
 			
@@ -277,6 +277,8 @@ class ControllerProductProduct extends Controller {
 			$this->data['model'] = $product_info['model'];
 			$this->data['reward'] = $product_info['reward'];
 			$this->data['points'] = $product_info['points'];
+            $this->data['quantity_txt'] = $this->language->get('quantity_txt');
+            $this->data['quantity'] = $product_info['quantity'];
 			
 			if ($product_info['quantity'] <= 0) {
 				$this->data['stock'] = $product_info['stock_status'];
@@ -305,7 +307,9 @@ class ControllerProductProduct extends Controller {
 			$results = $this->model_catalog_product->getProductImages($this->request->get['product_id']);
 			
 			foreach ($results as $result) {
+                list($width_orig, $height_orig) = getimagesize(DIR_IMAGE . $result['image']);
 				$this->data['images'][] = array(
+                    'image' => $this->model_tool_image->resize($result['image'], $width_orig, $height_orig),
 					'popup' => $this->model_tool_image->resize($result['image'], $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height')),
 					'thumb' => $this->model_tool_image->resize($result['image'], $this->config->get('config_image_additional_width'), $this->config->get('config_image_additional_height'))
 				);
@@ -453,6 +457,11 @@ class ControllerProductProduct extends Controller {
             
             $this->data['text_payment_profile'] = $this->language->get('text_payment_profile');
             $this->data['profiles'] = $this->model_catalog_product->getProfiles($product_info['product_id']);
+
+            if($product_info['date_available']) {
+                $this->data['date_added_txt'] = $this->language->get('date_added_txt');
+                $this->data['date_available'] = $product_info['date_available'];
+            }
 			
 			$this->model_catalog_product->updateViewed($this->request->get['product_id']);
 			
@@ -678,9 +687,9 @@ class ControllerProductProduct extends Controller {
 				$json['error'] = $this->language->get('error_name');
 			}
 			
-			if ((utf8_strlen($this->request->post['text']) < 25) || (utf8_strlen($this->request->post['text']) > 1000)) {
-				$json['error'] = $this->language->get('error_text');
-			}
+//			if ((utf8_strlen($this->request->post['text']) < 25) || (utf8_strlen($this->request->post['text']) > 1000)) {
+//				$json['error'] = $this->language->get('error_text');
+//			}
 	
 			if (empty($this->request->post['rating'])) {
 				$json['error'] = $this->language->get('error_rating');

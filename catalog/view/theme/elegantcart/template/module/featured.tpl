@@ -1,7 +1,7 @@
   <h1 class="general_heading"><?php echo $heading_title; ?></h1>
         
   <div class="products_container">
-    <?php foreach ($products as $product) { ?><div class='product_holder'>
+    <?php foreach ($products as $product) { ?><div class='product_holder featured_product'>
 		<div class='product_holder_inside'>	
 
 	    <?php if ($product['special']) { ?>

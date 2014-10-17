@@ -28,7 +28,13 @@
 
     <div class="right"> 
       <h1 class="pr_name"><?php echo $heading_title; ?></h1>
- 
+
+      <div class="price"><span class="txt_price"><?php echo $date_added_txt; ?>
+          <?php echo $date_available; ?></span></div>
+      <div class="price">
+          <span class="txt_price"><?php echo $quantity_txt; ?>
+          <?php echo $quantity; ?></span>
+      </div>
       <?php if ($price) { ?>
       <div class="price">
       	<span class="txt_price"><?php echo $text_price; ?></span>
@@ -225,9 +231,12 @@
       </div>
       <?php if ($review_status) { ?>
       <div class="review">
-        <div><img src="catalog/view/theme/elegantcart/image/stars-<?php echo $rating; ?>.png" alt="<?php echo $reviews; ?>" />&nbsp;&nbsp;(<a onclick="$('a[href=\'#tab-review\']').trigger('click');" class='rev_count'><?php echo $reviews; ?></a>)&nbsp;&nbsp;&nbsp;<span class="divider">|</span>&nbsp;&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');" class="icon_plus"><?php echo $text_write; ?></a></div>
-        <div class="share"><!-- AddThis Button BEGIN -->
-          <div class="addthis_default_style"><a class="addthis_button_compact"><?php echo $text_share; ?></a> <a class="addthis_button_email"></a><a class="addthis_button_print"></a> <a class="addthis_button_facebook"></a> <a class="addthis_button_twitter"></a></div>
+        <div><img src="catalog/view/theme/elegantcart/image/stars-<?php echo $rating; ?>.png" alt="<?php echo $reviews; ?>" />&nbsp;&nbsp;(<a onclick="$('a[href=\'#tab-review\']').trigger('click');" class='rev_count'><?php echo $reviews; ?></a>)&nbsp;&nbsp;&nbsp;<span class="divider">|</span>&nbsp;&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');" class="icon_plus">
+                <?php echo $text_write_product; ?></a></div>
+        <div class="share">
+          <!-- AddThis Button BEGIN -->
+          <div class="addthis_default_style"><a class="addthis_button_compact"><?php echo $text_share; ?></a> <a class="addthis_button_email"></a><a class="addthis_button_print"></a>
+              <a class="addthis_button_facebook"></a> <a class="addthis_button_twitter"></a></div>
           <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js"></script> 
           <!-- AddThis Button END --> 
         </div>
@@ -244,7 +253,13 @@
     <a href="#tab-review"><?php echo $tab_review; ?></a>
     <?php } ?>
   </div>
-  <div id="tab-description" class="tab-content"><?php echo $description; ?></div>
+  <div id="tab-description" class="tab-content">
+      <?php echo $description; ?>
+      <?php if ($images) { ?>
+      <?php foreach ($images as $image) { ?>
+      <img src="<?php echo $image['image']; ?>" alt = ""/>
+      <?php }} ?>
+      </div>
   <?php if ($attribute_groups) { ?>
   <div id="tab-attribute" class="tab-content">
     <table class="attribute">
@@ -276,17 +291,18 @@
     <textarea name="text" cols="40" rows="8" style="width: 98%;" class='ie_left'></textarea>
     <span style="font-size: 11px;"><?php echo $text_note; ?></span><br />
     <br />
-    <b class='r_label'><?php echo $entry_rating; ?></b> <span><?php echo $entry_bad; ?></span>&nbsp;
-    <input type="radio" name="rating" value="1" />
-    &nbsp;
-    <input type="radio" name="rating" value="2" />
-    &nbsp;
-    <input type="radio" name="rating" value="3" />
-    &nbsp;
-    <input type="radio" name="rating" value="4" />
-    &nbsp;
-    <input type="radio" name="rating" value="5" />
-    &nbsp; <span><?php echo $entry_good; ?></span><br />
+    <b class='r_label'><?php echo $entry_rating; ?></b>
+
+      <span><?php echo $entry_good; ?></span>
+      <input type="radio" name="rating" value="5" />
+      &nbsp;
+      中评
+      <input type="radio" name="rating" value="3" />
+      &nbsp;
+      <span><?php echo $entry_bad; ?></span>&nbsp;
+      <input type="radio" name="rating" value="1" />
+      &nbsp;
+      <br />
     <br />
     <div class='r_label'><?php echo $entry_captcha; ?></div>
     <input type="text" name="captcha" value=""  class='ie_left'/>

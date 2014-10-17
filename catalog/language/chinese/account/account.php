@@ -17,4 +17,5 @@ $_['text_reward']        = '我的积分';
 $_['text_return']        = '查看我的退换要求'; 
 $_['text_transaction']   = '我的资金余额'; 
 $_['text_newsletter']    = '订阅 / 退订咨询';
+$_['text_recurring']    = '退款';
 ?>

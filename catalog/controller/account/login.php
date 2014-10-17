@@ -31,7 +31,7 @@ class ControllerAccountLogin extends Controller {
 			
 			$customer_info = $this->model_account_customer->getCustomerByToken($this->request->get['token']);
 			
-		 	if ($customer_info && $this->customer->login($customer_info['email'], '', true)) {
+		 	if ($customer_info && $this->customer->login($customer_info['telephone'], '', true)) {
 				// Default Addresses
 				$this->load->model('account/address');
 					
@@ -132,7 +132,7 @@ class ControllerAccountLogin extends Controller {
 		$this->data['text_i_am_returning_customer'] = $this->language->get('text_i_am_returning_customer');
     	$this->data['text_forgotten'] = $this->language->get('text_forgotten');
 
-    	$this->data['entry_email'] = $this->language->get('entry_email');
+    	$this->data['entry_tel_card'] = $this->language->get('entry_tel_card');
     	$this->data['entry_password'] = $this->language->get('entry_password');
 
     	$this->data['button_continue'] = $this->language->get('button_continue');
@@ -202,7 +202,7 @@ class ControllerAccountLogin extends Controller {
       		$this->error['warning'] = $this->language->get('error_login');
     	}
 	
-		$customer_info = $this->model_account_customer->getCustomerByEmail($this->request->post['email']);
+		$customer_info = $this->model_account_customer->getCustomerByTelOrCard($this->request->post['email']);
 		
     	if ($customer_info && !$customer_info['approved']) {
       		$this->error['warning'] = $this->language->get('error_approved');

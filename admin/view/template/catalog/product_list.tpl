@@ -22,7 +22,8 @@
           <thead>
             <tr>
               <td width="1" style="text-align: center;"><input type="checkbox" onclick="$('input[name*=\'selected\']').attr('checked', this.checked);" /></td>
-              <td class="center"><?php echo $column_image; ?></td>
+              <td class="center">ID</td>
+                <td class="center"><?php echo $column_image; ?></td>
               <td class="left"><?php if ($sort == 'pd.name') { ?>
                 <a href="<?php echo $sort_name; ?>" class="<?php echo strtolower($order); ?>"><?php echo $column_name; ?></a>
                 <?php } else { ?>
@@ -54,6 +55,7 @@
           <tbody>
             <tr class="filter">
               <td></td>
+                <td></td>
               <td></td>
               <td><input type="text" name="filter_name" value="<?php echo $filter_name; ?>" /></td>
               <td><input type="text" name="filter_model" value="<?php echo $filter_model; ?>" /></td>
@@ -82,6 +84,7 @@
                 <?php } else { ?>
                 <input type="checkbox" name="selected[]" value="<?php echo $product['product_id']; ?>" />
                 <?php } ?></td>
+                <td class="center"><?php echo $product['product_id']; ?></td>
               <td class="center"><img src="<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>" style="padding: 1px; border: 1px solid #DDDDDD;" /></td>
               <td class="left"><?php echo $product['name']; ?></td>
               <td class="left"><?php echo $product['model']; ?></td>
